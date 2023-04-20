@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1 class="title">Survey Form</h1></header>
+      <form class="form-container">
+          
+          <h4 class="sub-title">Ler us know we can improve freeCode Camp</h4>
+          <div class="top">
+          <div class="left">
+            <label for="name"> *Name</label>
+            <label for="email"> *Email</label>
+            <label for="age"> *Age</label>
+            <label for="role"
+              >Which option best describes your current role?</label
+            >
+          </div>
+
+          <div class="right">
+            <input id="name" type="text" />
+            <input id="email" type="email" />
+            <input id="age" type="number" />
+
+            <select name="role" id="role">
+              <option value="student">Student</option>
+              <option value="worker">Worker</option>
+              <option value="unemployed">Unemployed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="middle">
+          <div class="left">
+            <label for="friend"
+              >*How likely is that you would recommend <br />
+              freeCodeCamp to a friend?</label>
+          </div>
+          <div class="right">
+            <input type="radio" name="friend" value="Dedinitely">
+            <input type="radio"  name="friend"  value="Maybe">
+            <input type="radio"  name="friend"  value="Not sure">
+          </div>
+        </div>
+
+        <div class="bottom">
+            <div class="left">
+                <label for="fcc">What do you like most in FCC</label>
+            </div>
+
+            <div class="right">
+                <select name="role" id="role">
+                    <option value="student">Select an option</option>
+                  </select>
+            </div>
+        </div>
+
+
+            <footer>
+                
+                <div class="left">
+                    <label for="lang">Things that should be improved in the future <br> (Check all that apply)</label>
+                </div>
+                
+                <div class="right">
+                    <label>  <input type="checkbox"  name="sameadr">Front-end Projects</label>
+                    <label>  <input type="checkbox"  name="sameadr">Back-end Projects</label>
+                    <label>  <input type="checkbox"  name="sameadr">Data Visualization</label>
+                </div>
+            </footer>
+      </form>
+    </div>
+  </body>
 </html>

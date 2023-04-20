@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+   background-color:#a9d8d2 ;
+}
+
+.form-container{
+  
+     margin: auto;
+     background-color: aliceblue; 
+    width: 90vw;
+    height: 90vh;
+
+}
+.top , .middle , .bottom{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+}
