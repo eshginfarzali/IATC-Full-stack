@@ -4,33 +4,52 @@
     box-sizing: border-box;
 }
 
+form{
+    width: 90%;
+}
+h1 , h4 {
+    text-align: center;
+}
 .container{
-    width: 100vw;
+    width: 100%  ;
     height: 100vh;
    background-color:#a9d8d2 ;
 }
 
 .form-container{
-  
+    font-size: 18px;
      margin: auto;
      background-color: aliceblue; 
-    width: 90vw;
+    width: 90%;
     height: 90vh;
 
 }
 .top , .middle , .bottom{
+   
     display: flex;
     flex-direction: row;
+    gap: 25px;
 }
 .left{
+    text-align: end;
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
 .right{
+    width: 45%;
+
     display: flex;
     flex-direction: column;
 }
 
 footer {
+    gap: 25px;
     display: flex;
+}
+label , input ,  select{
+    margin-top: 20px;
+}
+h4{
+    padding: 40px 0 20px 0;
 }
