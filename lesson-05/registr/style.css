@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+width: 100%;
+height: 100vh;
+background: #e4e4e4;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+font-size: 18px;
+justify-content: space-between;
+
+}
+
+input ,  textarea{
+    padding: 7px 3rem;
+}
+
+.gender {
+display: flex;
+gap: 80px;
+}
+
+.radio label{
+    padding: 0 10px;
+}
+
+button{
+    padding: 7px 10px;
+}
