@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  :root {
+    --gray: #5F6368;
+    --gray-icon: #9aa0a6;
+    --light-gray: #dadce0;
+    --gray-footer: #f8f9fa;
+    --blue-url: #1558d6;
+    --blue: #4285F4;
+    --red: #EA4335;
+    --yellow: #FBBC05;
+    --green: #34A853;
+    --nav-height: 4.8rem;
+    --apps-size: 1.8rem;
+    --apps-dot-size: calc(var(--apps-size) / 5);
+    --apps-dot-margin: calc(var(--apps-dot-size) / 3);
+    --user-size: 3rem;
+    --font-size-google: 9rem;
+    --paddig-google: 14rem 0 2rem;
+    --kerning-google: calc(var(--font-size-google)/-40);
+    --button-voice-size: 0;
+    --border-h: 0 2rem;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  nav {
+    height: var(--nav-height);
+    padding: var(--border-h);
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .options {
+    color: var(--gray);
+  
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .menu {
+    height: 1.2rem;
+    margin-right: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu div {
+    background-color: var(--gray);
+    width: 1.8rem;
+    height: .14em;
+  }
+  
+  .gmail {
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .all {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    
+    height: 100%;
+    margin-right: 2rem;
+  
+    display: flex;
+    align-items: center;
+  }
+  .all span {
+    padding: 0 1rem;
+  }
+   
+  .images {
+    text-transform: uppercase;
+  }
+  
+  .apps-user {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .apps {
+    width: var(--apps-size);
+    height: var(--apps-size);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .apps div {
+    background-color: var(--gray);
+    width: var(--apps-dot-size);
+    height: var(--apps-dot-size);
+    border-radius: var(--apps-dot-size);
+    margin: var(--apps-dot-margin);
+  }
+  
+ 
+  .user {
+    width: var(--user-size);
+    height: var(--user-size);
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+  .user img {
+    width: 100%;
+  }
+  
+  main {
+    height: calc(100vh - var(--nav-height));
+  }
+  
+  .google {
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-google);
+  
+    padding: var(--paddig-google);
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  .google span {
+    margin-right: var(--kerning-google);
+  }
+  .g1 { color: var(--blue); }
+  .o2 { color: var(--red); }
+  .o3 { color: var(--yellow); }
+  .g4 { color: var(--blue); }
+  .l5 { color: var(--green); }
+  .e6 { color: var(--red); }
+  
+  .search-box{
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+  
+    padding: 0 1rem;
+    margin: var(--border-h);
+  
+    border: 1px solid var(--light-gray);
+    border-radius: 5rem;
+  }
+  
+  .button-mg {
+    width: 1.6rem;
+    min-width: 1.6rem;
+  }
+  .button-mg img { width: 100%; }
+  
+  .search-input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+  
+    font-size: 1.6rem;
+    flex-grow: 1;
+    padding: 0 2rem;
+    min-width: 0;
+  }
+  
+  .button-voice { 
+    width: var(--button-voice-size);
+    overflow: hidden;
+  }
+  .button-voice img { width: 100%; }
+  
+  .search-buttons { 
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .lang {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    margin: 2rem auto;
+    padding: var(--border-h);
+  }
+  .lang a {
+    color: var(--blue-url);
+    margin-left: 1rem;
+  }
+  
+  footer {
+    background-color: var(--gray-footer);
+    color: var(--gray);
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location {
+    background-color: var(--gray-footer);
+    border-bottom: 1px solid var(--light-gray);
+    
+    width: 100%;
+    height: 8rem;
+    
+    position: absolute;
+    bottom: 0;
+    
+    display: flex;
+  }
+  .location span {
+    font-size: 1.6rem;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+  
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .redirections {
+    height: 100%;
+    padding: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap:  wrap;
+  }
+  
+  .about, .info-settings {
+    height: 3rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .redirections span {
+    padding-left: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .search-box {
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+   @media (min-width: 1024px) {
+    :root {
+      --black: #202124;
+  
+      --button-voice-size: 2.4rem;
+      --paddig-google: 18rem 0 2rem;
+    }
+      nav {
+      justify-content: end;
+    }
+  
+    .menu {
+      width: 0;
+      overflow: hidden;
+      margin: 0;
+    }
+  
+    .options {
+      color: var(--black);
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin-right: 2rem;
+    }
+  
+    .gmail {
+      width: auto;
+      margin-right: 2rem;
+      overflow: visible;
+    }
+  
+    .all {
+      width: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+  
+    .images {
+      text-transform: none;
+    }
+  
+    .search-box {
+      width: 58rem;
+      height: 4.7rem;
+      padding: 0 2rem;
+    }
+     .button-mg{
+       width: 1.6rem;
+     }
+     .button-voice {
+       width: 1.6rem;
+     }
+  
+    .search-buttons {
+      height: 5rem;
+      overflow: visible;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      margin: 2rem 0;
+    }
+  
+    .search-buttons a {
+      background-color: var(--gray-footer);
+      color: var(--black);
+      font-size: 1.4rem;
+  
+      padding: .9rem 2rem;
+      margin: 0 1rem;
+      border-radius: 0.3rem;
+  
+      border: 1px solid transparent;
+  
+ 
+    }
+  
+    footer {
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .location {
+      height: 4.8rem;
+      position: relative;
+  
+      align-items: center;
+    }
+  
+    .location span {
+      width: fit-content;
+      height: fit-content;
+      border-bottom: none;
+    }
+  
+    .redirections {
+      font-size: 1.4rem;
+      padding: 1rem;
+  
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .search-buttons a:hover {
+      filter: drop-shadow(0 0 1px var(--gray));
+      border: 0px;
+      cursor: pointer;
+  
+      border: 1px solid transparent;
+    }
+  
+    .search-buttons a:active {
+      filter: none;
+      border: 1px solid var(--blue);
+    }
+  }
+}
