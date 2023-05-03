@@ -48,8 +48,8 @@
 
   .show-number{
     background: linear-gradient(hsla(256, 72%, 46%, 1),rgb(91, 46, 214));
-    width: 200px;
-    height: 200px;
+    width: 12rem;
+    height:  12rem;
     border-radius:50%;
     margin: auto;
     display: flex;
@@ -92,12 +92,13 @@
  
   }
 
-  aside{
+  .aside{
     display: grid;
     gap: 20px;
     padding: 20px;
   }
   .data{
+    font-size: 15px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -105,6 +106,13 @@
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+  }
+  .data img{
+    margin-right: 10px;
+   width: 15px;
+   height: 15px;
+    align-items: center;
+    
   }
   .datas{
     display: grid;
@@ -115,7 +123,23 @@
 font-size: 20px;
 font-weight: 400;
 }
+.react{
+  color: rgb(240, 108, 108);
+}
+.memory{
+  color: rgb(249,184,64);
+}
+.verbal{
+  color:rgb(57,194,160) ;
+}
 
+.visual{
+color: rgb(42,58,214);
+}
+
+.hundred{
+  color:  rgb(142, 141, 141);
+}
 button{
   padding: 10px 50px;
   background-color:#303b59;
@@ -125,4 +149,42 @@ button{
   font-size: 20px;
   font-weight: 400;
 
+}
+
+@media  (max-width:375) {
+
+  section {
+    height: auto;
+
+width: 100%;
+flex-wrap: wrap;
+
+}
+.right{
+  height: 60vh;
+  width: 100%;
+}
+.left{
+  width: 100%;
+}
+}
+
+@media  (max-width:768px) {
+
+
+
+section {
+height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  
+  }
+  .right{
+    height: 60vh;
+
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+  }
 }
