@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +12,117 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Outfit', sans-serif;
   }
   section{
-    background-color: blanchedalmond;
+    background-color: rgb(239, 234, 227);
     width: 50%;
     display: flex;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
   .right{
-    width: 25%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgb(115, 73, 232), hsla(256, 72%, 46%, 1));
+    color:  hsl(0, 0%, 100%);
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    
+
   }
+
+  .result{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .show-number{
+    background: linear-gradient(hsla(256, 72%, 46%, 1),rgb(91, 46, 214));
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.num700{
+  color: gray;
+}
+
+
+.number76{
+  font-size: 80px;
+  font-weight: 700;
+
+}
+
+.great{
+  margin-top: -10px;
+  font-size: 25px;
+  font-weight: 400;
+
+}
+
+.text{
+  margin-top: 10px;
+  width: 70%;
+  font-size: 15px;
+  color: rgb(175, 169, 169);
+}
+
+
   .left{
-    width: 25%;
+    padding: 27px;
+    width: 50%;
+    color: hsl(224, 30%, 27%);
+ 
   }
+
+  aside{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+  }
+  .data{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(222, 212, 212);
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  }
+  .datas{
+    display: grid;
+    gap: 10px;
+
+}
+.summary{
+font-size: 20px;
+font-weight: 400;
+}
+
+button{
+  padding: 10px 50px;
+  background-color:#303b59;
+  border: none;
+  border-radius: 30px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 400;
+
+}
