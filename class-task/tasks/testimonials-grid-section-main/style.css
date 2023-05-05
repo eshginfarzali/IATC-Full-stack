@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@500;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 55px;
+    
+}
+.left >.daniel-vs-jonatan{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 55px;
+}
+.left>.harmon-vs-abrams{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 55px;
+    margin-top: 35px;
+   
+}
+
+.name-vs-photo{
+    display: flex;
+    align-items: center;
+}
+.photo img{
+    border-radius: 50%;
+
+}
+
+.daniel{
+    background-color: purple;
+    border-radius:10px;
+
+}
+
+
+
+
+
+
+.jonathan{
+    background-color: gray;
+    border-radius:10px;
+}
+
+
+
+
+.harmon{
+    background-color: antiquewhite;
+    border-radius:10px;
+}
+
+
+
+
+
+.abrams{
+    background-color: black;
+    color: antiquewhite;
+    border-radius:10px;
+}
+
+.right{
+    background-color: antiquewhite;
+    border-radius:10px;
+}
