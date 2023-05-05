@@ -1,0 +1,47 @@
+@import url('../fonts/style.css');
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./providing.css');
+@import url('./smarthiring.css');
+@import url('./finding.css');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	color: #ffffff;
+	font-family: 'Neue Machina', sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.vertical-line {
+	display: inline-block;
+	height: 41px;
+	width: 1px;
+	background-color: var(--black-80);
+}
+
+body {
+	> main {
+		height: 100vh;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	background-color: #EEEDEB;;
+}

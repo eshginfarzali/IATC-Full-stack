@@ -1,0 +1,93 @@
+.providing{
+	margin-top: 205px;
+	display: flex;
+	justify-content: space-between;
+}
+.providing > .photos > .wrapper {
+	width: 500px;
+	height: 500px;
+
+}
+
+
+
+.providing > .photos {
+	position: relative;
+	width: 49%;
+	height: 700px;
+	display: inline-block;
+}
+
+.providing > .photos > .wrapper:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(52deg);
+}
+.providing > .photos > .wrapper:nth-child(2) {
+	position: absolute;
+	top: 150px;
+	left: 250px;
+	transform: rotate(22deg);
+}
+
+.providing > .content {
+	width: 49%;
+	height: 700px;
+	display: inline-block;
+}
+
+.create-account{
+	width: 35%;
+	margin-right: 100px;
+}
+.create-account h2{
+	font-family: 'Sora';
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 61.44px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+.create-account p{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 144%;
+	/* or 35px */
+	
+	letter-spacing: 0.06em;
+	
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.create-account button{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+color:#72FDF5;
+font-size: 24px;
+line-height: 36px;
+
+
+width: 300px;
+height: 68px;
+
+background: #000000;
+border-radius: 100px;
+}
+
+.create-account-btn img{
+	width: 145px;
+	height: 145px;
+}
+
+.create-account-btn{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

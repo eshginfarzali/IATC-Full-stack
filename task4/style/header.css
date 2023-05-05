@@ -1,0 +1,82 @@
+header {
+	background-color: #000000;
+	padding: 38px;
+
+}
+
+header > .logo > a {
+	color: #72fdf5;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 46px;
+	letter-spacing: 0.035em;
+}
+
+header > nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header > nav > ul > li {
+	display: inline-block;
+	padding: 8px 14px;
+}
+
+header > nav > ul > li > a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+header > .auth-actions > a {
+	
+	color: #72fdf5;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+.half-blood {
+	position: relative;
+	margin-top: -65px;
+}
+
+.half-blood > .half-content{
+	display: flex;
+    justify-content: space-evenly;
+	
+}
+
+.half-blood > .half-content > .content {
+width: 330px;
+height: 176px;
+background: var(--white);
+border-radius: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--black);
+gap: 30px;
+}
+
+.half-blood > .half-content > .content > .icon{
+	width: 60px;
+	height: 60px;
+	background-color: var(--black);
+	border-radius: 10px;
+	padding: 8px 0 0 9px;
+}
+
+.half-blood > .half-content > .content > .text>h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 112%;
+letter-spacing: 0.06em;
+color: #000000;
+}
