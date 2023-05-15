@@ -1,89 +1,92 @@
 .header {
-	background-image: url('./images/bg-header-desktop.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 363px;
-	mix-blend-mode: normal;
-	opacity: 0.25;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 363px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .hero {
-	margin-top: -150px;
+  margin-top: -150px;
 
-	> img {
-		margin-bottom: 58px;
-	}
+  > img {
+    margin-bottom: 58px;
+  }
 }
 
 .btn-group {
-	gap: 16px;
+  gap: 16px;
 }
 
 .feature {
-	margin-right: 300px;
-	display: grid;
-	grid-template-columns: 1fr 350px;
-	gap: 100px;
+  /* margin-right: 300px; */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 350px;
+  gap: 100px;
+  >img{
+    width: 693px;
+  }
 
-	> ul {
-		list-style: none;
-		padding: 0;
+  > ul {
+    list-style: none;
+    padding: 0;
 
-		> li {
-			display: flex;
-			flex-direction: column;
-			gap: 8px;
-		}
-	}
+    > li {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
 }
 
 .devices {
-	height: 600px;
+  height: 600px;
 
-	> img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-}
-
-.info-section{
-	gap: 40px;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
-.companys{
-	gap: 70px;
+.info-section {
+  gap: 40px;
 }
 
-.footer{
-	gap: 100px;
-}
-.footer-logo{
-	width: 53px;
-	height: 53px;
-	
-}
-.footer-logo img{
-	width: 100%;
+.companys {
+  gap: 70px;
 }
 
-.footer>.blacklist>p:hover{
-	cursor: pointer;
-	color: aqua;
+.footer {
+  gap: 100px;
 }
-.social>img:hover{
-	cursor: pointer;
-	background-color: aqua;
-	color: aqua;
+.footer-logo {
+  width: 53px;
+  height: 53px;
+}
+.footer-logo img {
+  width: 100%;
 }
 
-.social{
-	display: flex;
-	gap: 15px;
+.footer > .blacklist > p:hover {
+  cursor: pointer;
+  color: aqua;
+}
+.social > img:hover {
+  cursor: pointer;
+  background-color: aqua;
+  color: aqua;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
 }
