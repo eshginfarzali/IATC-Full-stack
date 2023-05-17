@@ -1,0 +1,79 @@
+
+
+header , main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main{
+    padding-top: -120px;
+}
+
+h1{
+    width: 70%;
+    font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 71px;
+
+/* 13183F */
+
+color: #13183F;
+
+}
+p{
+    width: 70%;
+    font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+/* 83869A */
+
+color: #83869A;
+}
+.img-hero img{
+    width: 100%;
+    object-fit: cover;
+}
+.btn-1{
+background: #13183F;
+border-radius: 28px;
+height: 56px;
+width: 167px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+
+
+
+}
+
+.btn-2{
+background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+border-radius: 31.5px;
+height: 63px;
+width: 167px;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+margin-top: 15px;
+}
+
+.card-1{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%) !important;
+border-radius: 15px;
+}
