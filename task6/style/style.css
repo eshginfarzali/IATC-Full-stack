@@ -73,7 +73,35 @@ color: #FFFFFF;
 margin-top: 15px;
 }
 
-.card-1{
+.one-card{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%) !important;
 border-radius: 15px;
+text-align: center;
+padding: 80px  0 80px 0;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+
+/* FFFFFF */
+
+color: #FFFFFF;
+}
+
+.btn{
+    background-color: transparent !important;
+    color: #F74780;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    border:none !important ;
+    outline: none !important;
+}
+.btn:hover{
+    color: #F74780;
 }
