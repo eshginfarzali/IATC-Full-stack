@@ -11,8 +11,11 @@ main{
     padding-top: -120px;
 }
 
-h1{
+/* .text-skill{
     width: 70%;
+
+} */
+h1{
     font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 800;
@@ -25,7 +28,6 @@ color: #13183F;
 
 }
 p{
-    width: 70%;
     font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 500;
@@ -38,8 +40,10 @@ line-height: 28px;
 
 color: #83869A;
 }
-.img-hero img{
+
+.img-lg>img{
     width: 100%;
+    box-sizing: border-box;
     object-fit: cover;
 }
 .btn-1{
@@ -101,7 +105,28 @@ color: #FFFFFF;
     line-height: 28px;
     border:none !important ;
     outline: none !important;
+  
+}
+
+.btn-1 , .btn-2{
+    border:none !important ;
+    outline: none !important;
 }
 .btn:hover{
     color: #F74780;
+}
+footer{
+    height: 120px;
+left: 0px;
+top: 1725px;
+
+/* 13183F */
+
+background: #13183F;
+
+}
+footer > .container {
+    display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
