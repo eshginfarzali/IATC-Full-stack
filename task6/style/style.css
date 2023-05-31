@@ -28,17 +28,13 @@ color: #13183F;
 
 }
 p{
-    font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-/* or 156% */
-
-
-/* 83869A */
-
+ font-family: 'Plus Jakarta Sans';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 28px;
 color: #83869A;
+
 }
 
 .img-lg>img{

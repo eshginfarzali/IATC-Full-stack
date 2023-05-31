@@ -1,0 +1,9 @@
+.collection-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-grid img{
+width: 100%;
+border: 1px solid rgb(198, 185, 185);
+}
