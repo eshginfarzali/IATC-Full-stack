@@ -394,8 +394,39 @@ console.log(isPalindrome("racecar")); // true
 // example: The quick brown fox jumps over the lazy dog. // true
 // example: The quick brown fox jumps over the dog. // false
 
+function isPangram(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < alphabet.length; i++) {
+    if (str.toLowerCase().indexOf(alphabet[i]) === -1) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog.")); // true
+console.log(isPangram("The quick brown fox jumps over the dog.")); // false
+
+
+
+
+
 // 15. Write a JavaScript program to check if a given string is a anagram.
 // anagram: a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 // example: cinema // iceman // true
 // example: listen // silent // true
 // example: hello // world // false
+
+
+function isAnagram(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  let sortedStr1 = str1.split("").sort().join("");
+  let sortedStr2 = str2.split("").sort().join("");
+  return sortedStr1 === sortedStr2;
+}
+
+console.log(isAnagram("cinema", "iceman")); // true
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world")); // false
