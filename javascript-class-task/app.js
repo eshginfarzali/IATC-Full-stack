@@ -239,6 +239,24 @@ console.log(upperCaseFirstLetter("a man who thinks about the end, can not be a h
 // example: javascript is bomba
 // example: a man who thinks about the end, can not be a hero
 
+function deleteDuplicates(str) {
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    if (newStr.indexOf(str[i]) === -1) {
+      newStr += str[i];
+    }
+  }
+  return newStr;
+}
+
+console.log(deleteDuplicates("hello world")); // helo wrd
+console.log(deleteDuplicates("javascript is bomba")); // javscritbom
+console.log(deleteDuplicates("a man who thinks about the end, can not be a hero")); // amnwhtiksobed,cnrbh
+
+
+
+
+
 // 10. Write a JavaScript program to convert a string into camel case.
 // example: hello world
 // output: helloWorld
