@@ -418,13 +418,13 @@ console.log(isPangram("The quick brown fox jumps over the dog.")); // false
 // example: hello // world // false
 
 
-function isAnagram(str1, str2) {
-  if (str1.length !== str2.length) {
+function isAnagram(str, str2) {
+  if (str.length !== str2.length) {
     return false;
   }
-  let sortedStr1 = str1.split("").sort().join("");
+  let sortedStr = str.split("").sort().join("");
   let sortedStr2 = str2.split("").sort().join("");
-  return sortedStr1 === sortedStr2;
+  return sortedStr === sortedStr2;
 }
 
 console.log(isAnagram("cinema", "iceman")); // true
