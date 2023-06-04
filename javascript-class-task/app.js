@@ -119,7 +119,7 @@ console.log(true);
 
 
 
-
+/*
 
 //with function
 
@@ -165,7 +165,7 @@ console.log(onlyNumberLetters("1234567890a"));              // true
 console.log(onlyNumberLetters("1234567890a!@#$%^&*()_+"));  // false
 
 
-
+*/
 
 
 
@@ -175,11 +175,34 @@ console.log(onlyNumberLetters("1234567890a!@#$%^&*()_+"));  // false
 // example: HELLO WORLD!@#$%^&*()_+ // true
 // example: HELLO WORLD!@#$%^&*()_+a // false
 
+function noLowerCaseLatter(str){
+  for (let i = 0; i < str.length; i++ ){
+    const charCode = str.charCodeAt(i)
+  if(charCode >=97 && charCode <=122){
+    return false
+  }
+}
+return true 
+}
+console.log(noLowerCaseLatter("HELLO WORLD")); // true
+console.log(noLowerCaseLatter("HELLO WORLD!")); // true
+console.log(noLowerCaseLatter("HELLO WORLD!@#$%^&*()_+"));// true 
+console.log(noLowerCaseLatter("HELLO WORLD!@#$%^&*()_+a")); // false
+
+
+
+
+
 // 8. Write a JavaScript program to UpperCase the first letter of each word of a given string without spaces.
 // example: hello world
 // output: HelloWorld
 // example: a man who thinks about the end, can not be a hero
 
+
+
+
+
+ 
 // 9. Write a JavaScript program to remove duplicate characters from a string.
 // example: hello world
 // output: helo wrd
