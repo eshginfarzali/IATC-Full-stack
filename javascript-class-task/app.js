@@ -119,6 +119,56 @@ console.log(true);
 
 
 
+
+
+//with function
+
+function onlyNumberLetters(str) {
+  for (let i = 0; i < str.length; i++) {
+    const charCode = str.charCodeAt(i);
+    if (!isNumber(charCode) && !isLetter(charCode)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function isNumber(charCode) {
+  return charCode >= 48 && charCode <= 57;
+}
+
+function isLetter(charCode) {
+  return (charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122); 
+}
+
+console.log(onlyNumberLetters("1234567890"));               // true
+console.log(onlyNumberLetters("1234567890a"));              // true
+console.log(onlyNumberLetters("1234567890a!@#$%^&*()_+"));  // false
+
+
+
+
+//2nd way
+
+function onlyNumberLetters(str) {
+  for (let i = 0; i < str.length; i++) {
+    const charCode = str.charCodeAt(i);
+    if (!((charCode >= 48 && charCode <= 57) || (charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(onlyNumberLetters("1234567890"));               // true
+console.log(onlyNumberLetters("1234567890a"));              // true
+console.log(onlyNumberLetters("1234567890a!@#$%^&*()_+"));  // false
+
+
+
+
+
+
 // 7. Write a JavaScript program to check if a string contains only uppercase letters.
 // example: HELLO WORLD // true
 // example: HELLO WORLD! // true
