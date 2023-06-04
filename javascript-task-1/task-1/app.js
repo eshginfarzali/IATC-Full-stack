@@ -232,6 +232,9 @@ console.log(upperCaseFirstLetter("a man who thinks about the end, can not be a h
 
 */
 
+
+
+
  
 // 9. Write a JavaScript program to remove duplicate characters from a string.
 // example: hello world
@@ -257,28 +260,134 @@ console.log(deleteDuplicates("a man who thinks about the end, can not be a hero"
 */
 
 
+
+
+
+
+
+
+
+
+
 // 10. Write a JavaScript program to convert a string into camel case.
 // example: hello world
 // output: helloWorld
 // example: javascript is bomba
 // example: a man who thinks about the end, can not be a hero
+/*
+function toCamelCase(str) {
+  let words = str.split(' ');
+  for (let i = 1; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
+  return words.join('');
+}
 
+console.log(toCamelCase('hello world')); //  helloWorld
+console.log(toCamelCase('javascript is bomba'));
+console.log(toCamelCase('a man who thinks about the end, can not be a hero')); 
+*/
 // 11. Write a JavaScript program to convert a string into snake case.
 // example: hello world
 // output: hello_world
 // example: a man who thinks about the end, can not be a hero
+/*
+function toSnakeCase(str) {
+  return str.replace(/ /g, '_').toLowerCase();
+}
+
+console.log(toSnakeCase('hello world')); // Output: hello_world
+console.log(toSnakeCase('a man who thinks about the end, can not be a hero')); 
+
+*/
+
+
+
+
+
+
+
+
 
 // 12. Write a JavaScript program to convert a string into kebab case.
 // example: hello world
 // output: hello-world
 // example: a man who thinks about the end, can not be a hero
 // example: javascript is bomba
+/*
+function kebabCase(str) {
+  return str.toLowerCase().replace(/ /g, "-");
+}
+
+console.log(kebabCase("hello world")); // hello-world
+console.log(kebabCase("a man who thinks about the end, can not be a hero")); 
+console.log(kebabCase("javascript is bomba"));
+*/
+
+
+
+
+
+
 
 // 13. Write a JavaScript program to check if a given string is a palindrome.
 // palindromes: madam, civic, radar, level, rotor, kayak, reviver, racecar, redder, madam, refer
 // example: hello world // false
 // example: madam // true
 // example: racecar // true
+
+/*
+
+function isPalindrome(str) {
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPalindrome("hello world")); // false
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("racecar")); // true
+
+
+function isPalindrome(str) {
+  let reversedStr = str.split("").reverse().join("");
+  return str === reversedStr;
+}
+
+console.log(isPalindrome("hello world")); // false
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("racecar")); // true
+
+
+
+
+function isPalindrome(str) {
+  let left = 0;
+  let right = str.length - 1;
+  while (left < right) {
+    if (str[left] !== str[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+  return true;
+}
+
+console.log(isPalindrome("hello world")); // false
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("racecar")); // true
+
+*/
+
+
+
+
+
+
 
 // 14. Write a JavaScript program to check if a given string is a pangram.
 // pangram: a sentence containing every letter in the English alphabet.
