@@ -42,20 +42,20 @@ console.log(newStr);
 
 
 // 4. Write program to find the first not repeated character: `'abacddbec' => 'e'`
-
-const str1 = 'abacddbec';
-const arr = str1.split('');
+/*
+const str = 'abacddbec';
+const arr = str.split('');
 
 const newArr = arr.filter((char) => {
 
     console.log(arr.indexOf(char))
-    // console.log(arr.lastIndexOf(char));
+    console.log(arr.lastIndexOf(char));
   return arr.indexOf(char) === arr.lastIndexOf(char);
 });
 
 
 console.log(newArr);
-
+*/
 
 // 5. Write program to find the first repeated character: `'abacddbec' => 'a'`
 /*
@@ -295,33 +295,8 @@ const numbersArray =[1, 2, 3, 4, 5]
 let sumEvenNumbers= 0
 for (const num of numbersArray) {
   if (num%2===0) {
-    sumEvenNumbers+=num    
+    sumEvenNumbers+=num   
   }
 }
 console.log(sumEvenNumbers);
 */
-
-const str = "madam";
-let isPalindrome = true;
-
-for (let i = 0; i < str.length / 2; i++) {
-  if (str[i] !== str[str.length - 1 - i]) {
-    isPalindrome = false;
-    break;
-  }
-}
-
-console.log(`${str} is a palindrome: ${isPalindrome}`);
-
-
-// const str = "madam";
-// let isPalindrome = true;
-
-// for (let i = 0; i < str.length / 2; i++) {
-//   if (str[i] !== str[str.length - 1 - i]) {
-//     isPalindrome = false;
-//     break;
-//   }
-// }
-
-// console.log(`${str} is a palindrome: ${isPalindrome}`);
