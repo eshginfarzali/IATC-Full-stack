@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo-devlinks-small.svg"
+    />
+    <link rel="stylesheet" href="./css/links.css" />
+    <title>Devlinks</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <img class="for-mobile-logo" src="./assets/images/logo-devlinks-small.svg" alt="">
+          <img class="for-div-logo" src="./assets/images/logo-devlinks-large.svg" alt="" />
+        </div>
+        <div class="link-profile">
+          <div class="links">
+            <a href="./links.html"><img src="./assets/images/icon-links-header.svg" alt=""><span class="divaces-for">Links</span></a>
+          </div>
+          <div class="profile"><a href="./profile-detail.html">
+            <img src="./assets/images/icon-profile-details-header.svg" alt="">
+            <span class="divaces-for">Profile details</span>
+          </a></div>
+        </div>
+
+        <div class="preveiw"><button><a href="./preview.html"> <span class="divaces-for">Preview</span> <img class="for-mobile-logo" src="./assets/images/icon-preview-header.svg" alt=""></a></button></div>
+      </header>
+
+      <section class="customize-link">
+      <div>
+        <h1 class="custm-link">Profile Details</h1>
+        <p class="custm-add-edir">
+          Add your details to create a personal touch to your profile.
+        </p>
+      </div>
+
+      <div class="image-profile-upload">
+        <div class="img-profile">
+          <div class="div">Profile pictures</div>
+          <div class="upload-pic" id="fileUpload">
+            
+            <input type="file" id="fileImage">
+            <div id="uploadImage">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="image-profile-upload profile-data">
+       <div class="firstname">
+        <p><label for="firstname">Firstname*</label></p> 
+        <div><input value="" placeholder="Enter firstname" type="text" name="" id="firstname"></div>
+       </div>
+       <div class="lasstname">
+        <p><label for="laststname">Laststname*</label></p>
+        <div><input  placeholder="Enter lastname" value="" type="text" name="" id="laststname"></div>
+       </div>
+       <div class="email">
+        <p><label for="email">Email</label></p>
+        <div><input  placeholder="Enter email" value="" type="email" name="" id="email"></div>
+       </div>
+        </div>
+      </div>
+
+
+      <div class="save-box"><button id="saveProfile">Save</button></div>
+
+    
+  </section>
+
+
+
+
+    </main>
+
+    <script src="./script/profile-detail.js"></script>
+
+  </body>
+</html>

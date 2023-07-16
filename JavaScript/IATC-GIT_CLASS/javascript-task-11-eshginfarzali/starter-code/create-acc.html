@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo-devlinks-small.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> Link-sharing app</title>
+</head>
+<body>
+
+<main>
+<h1 class="logo-devlinks-large">
+  <img src="./assets/images/logo-devlinks-large.svg" alt="">
+</h1>
+<div class="login-page">
+  <div>
+
+    <h2 class="login">Create account</h2>
+    <p class="login-your">Let’s get you started sharing your links!</p>
+  </div>
+
+  <div class="login-page-input">
+    <div class="email">
+      <label for="email"> Email address</label><br>
+      <input value="" id="createEmailInp" class="input-login"  required type="email" name="email" id="email" placeholder="✉️  e.g. alex@email.com">
+    </div>
+    <div class="password">
+      <label for="password">Create password</label><br>
+      <input value="" class="input-login" id="createPass" required type="password" name="password" id="password" placeholder="🔒  At least 8 characters">
+    </div>
+    <div class="password">
+      <label for="password">Confirm password</label><br>
+      <input value="" class="input-login" id="confrimPass" required type="password" name="password" id="password" placeholder="🔒  At least 8 characters">
+    </div>
+    <p class="pass-eight-char">Password must contain at least 8 characters</p>
+    <button class="btn-login" id="createbtn">
+     <a href="#"> Create new account</a>
+    </button>
+    <p class="dont-acc">Don’t have an account? <a href="../index.html"> Login</a></p>
+  </div>
+</div>
+</main>
+
+ 
+<script src="./script/create-acc.js"></script>
+</body>
+</html>

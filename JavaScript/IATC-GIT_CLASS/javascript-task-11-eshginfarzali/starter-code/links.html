@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo-devlinks-small.svg"
+    />
+    <link rel="stylesheet" href="./css/links.css" />
+    <title>Devlinks</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <img
+            class="for-mobile-logo"
+            src="./assets/images/logo-devlinks-small.svg"
+            alt=""
+          />
+          <img
+            class="for-div-logo"
+            src="./assets/images/logo-devlinks-large.svg"
+            alt=""
+          />
+        </div>
+        <div class="link-profile">
+          <div class="links">
+            <a href="./links.html"
+              ><img src="./assets/images/icon-links-header.svg" alt="" /><span
+                class="divaces-for"
+                >Links</span
+              ></a
+            >
+          </div>
+          <div class="profile">
+            <a href="./profile-detail.html">
+              <img
+                src="./assets/images/icon-profile-details-header.svg"
+                alt=""
+              />
+              <span class="divaces-for">Profile details</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="preveiw">
+          <button>
+            <a href="./preview.html">
+              <span class="divaces-for">Preview</span>
+              <img
+                class="for-mobile-logo"
+                src="./assets/images/icon-preview-header.svg"
+                alt=""
+            /></a>
+          </button>
+        </div>
+      </header>
+
+      <section class="customize-link">
+        <div>
+          <h1 class="custm-link">Customize your links</h1>
+          <p class="custm-add-edir">
+            Add/edit/remove links below and then share all your profiles with
+            the world!
+          </p>
+        </div>
+        
+
+        <div>
+          <button id="addNewLink">+ Add new link</button>
+        </div>
+       <div id="resualt">
+        
+        <div class="resault-empty">
+          <div>
+            <img src="./assets/images/illustration-empty.svg" alt="" />
+          </div>
+          <h2>Let’s get you started</h2>
+          <p class="empty-text">
+            Use the “Add new link” button to get started. Once you have more
+            than one link, you can reorder and edit them. We’re here to help you
+            share your profiles with everyone!
+          </p>
+        </div> 
+      </div>
+        <div class="save-box"><button disabled id="linkSave">Save</button></div>
+      </section>
+    </main>
+    <script src="./script/links.js"></script>
+
+  </body>
+</html>
